@@ -2730,6 +2730,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btn_openGal
 id button2
 id button3
 id button5

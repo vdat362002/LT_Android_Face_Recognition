@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
     int cam_face=CameraSelector.LENS_FACING_BACK; //Default Back Camera
 
     int[] intValues;
-    int inputSize=112;  //Input size for model
+    int inputSize = 112;  //Input size for model
     boolean isModelQuantized=false;
     float[][] embeedings;
     float IMAGE_MEAN = 128.0f;
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
 
     String modelFile="mobile_face_net.tflite"; //model name
 
-    private HashMap<String, SimilarityClassifier.Recognition> registered = new HashMap<>(); //saved Faces
+    public static HashMap<String, SimilarityClassifier.Recognition> registered = new HashMap<>(); //saved Faces
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -178,10 +178,8 @@ public class MainActivity extends AppCompatActivity {
                                 loadphoto();
                                 break;
                         }
-
                     }
                 });
-
 
                 builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
@@ -245,8 +243,6 @@ public class MainActivity extends AppCompatActivity {
                     reco_name.setVisibility(View.INVISIBLE);
                     face_preview.setVisibility(View.VISIBLE);
                     preview_info.setText("1.Bring Face in view of Camera.\n\n2.Your Face preview will appear here.\n\n3.Click Add button to save face.");
-
-
                 }
 
             }
@@ -268,10 +264,14 @@ public class MainActivity extends AppCompatActivity {
         cameraBind();
     }
 
+    public void openGal(View view){
+        Intent intent = new Intent(MainActivity.this, uploadimage.class);
+        startActivity(intent);
+    }
+
     private void addFace()
     {
         {
-
             start=false;
             AlertDialog.Builder builder = new AlertDialog.Builder(context);
             builder.setTitle("Enter Name");
@@ -309,7 +309,7 @@ public class MainActivity extends AppCompatActivity {
             builder.show();
         }
     }
-    private  void clearnameList()
+    private void clearnameList()
     {
         AlertDialog.Builder builder =new AlertDialog.Builder(context);
         builder.setTitle("Do you want to delete all Recognitions?");
@@ -445,11 +445,8 @@ public class MainActivity extends AppCompatActivity {
             names[i]=entry.getKey();
             checkedItems[i]=false;
             i=i+1;
-
         }
         builder.setItems(names,null);
-
-
 
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
@@ -549,7 +546,6 @@ public class MainActivity extends AppCompatActivity {
                                                 if(faces.size()!=0) {
 
                                                     Face face = faces.get(0); //Get first face from detected faces
-//                                                    System.out.println(face);
 
                                                     //mediaImage to Bitmap
                                                     Bitmap frame_bmp = toBitmap(mediaImage);
@@ -558,8 +554,6 @@ public class MainActivity extends AppCompatActivity {
 
                                                     //Adjust orientation of Face
                                                     Bitmap frame_bmp1 = rotateBitmap(frame_bmp, rot, false, false);
-
-
 
                                                     //Get bounding box of face
                                                     RectF boundingBox = new RectF(face.getBoundingBox());
@@ -574,8 +568,6 @@ public class MainActivity extends AppCompatActivity {
 
                                                     if(start)
                                                         recognizeImage(scaled); //Send scaled bitmap to create face embeddings.
-//                                                    System.out.println(boundingBox);
-
                                                 }
                                                 else
                                                 {
@@ -584,7 +576,6 @@ public class MainActivity extends AppCompatActivity {
                                                     else
                                                         reco_name.setText("No Face Detected!");
                                                 }
-
                                             }
                                         })
                                 .addOnFailureListener(
@@ -677,14 +668,15 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else
                 {
-                    if(distance_local<distance) //If distance between Closest found face is more than 1.000 ,then output UNKNOWN face.
+                    if(distance_local<distance) {//If distance between Closest found face is more than 1.000 ,then output UNKNOWN face.
                         reco_name.setText(name);
+                        System.out.println("distance_local: " + distance_local);
+                    }
                     else
                         reco_name.setText("Unknown");
                 }
-                }
             }
-
+        }
     }
 
 
@@ -923,7 +915,7 @@ public class MainActivity extends AppCompatActivity {
             if (requestCode == SELECT_PICTURE) {
                 Uri selectedImageUri = data.getData();
                 try {
-                    InputImage impphoto=InputImage.fromBitmap(getBitmapFromUri(selectedImageUri),0);
+                    InputImage impphoto = InputImage.fromBitmap(getBitmapFromUri(selectedImageUri),0);
                     detector.process(impphoto).addOnSuccessListener(new OnSuccessListener<List<Face>>() {
                         @Override
                         public void onSuccess(List<Face> faces) {
@@ -958,8 +950,8 @@ public class MainActivity extends AppCompatActivity {
                                 Bitmap scaled = getResizedBitmap(cropped_face, 112, 112);
                                 // face_preview.setImageBitmap(scaled);
 
-                                    recognizeImage(scaled);
-                                    addFace();
+                                recognizeImage(scaled);
+                                addFace();
 //                                System.out.println(boundingBox);
                                 try {
                                     Thread.sleep(100);
@@ -984,6 +976,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
     private Bitmap getBitmapFromUri(Uri uri) throws IOException {
         ParcelFileDescriptor parcelFileDescriptor =
                 getContentResolver().openFileDescriptor(uri, "r");
