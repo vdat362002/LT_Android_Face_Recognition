@@ -9,13 +9,15 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd38b4ff-2eb5-4284-aca2-3f843b64bb6f" name="Changes" comment="" />
+    <list default="true" id="fd38b4ff-2eb5-4284-aca2-3f843b64bb6f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/atharvakale/facerecognition/splash_screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/atharvakale/facerecognition/splash_screen.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\ADMIN\.android\avd\Pixel_4_API_27.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[R58MC0KP5HX]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
