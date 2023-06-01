@@ -1,12 +1,12 @@
-#Thu Jun 01 03:00:41 ICT 2023
+#Thu Jun 01 11:37:38 ICT 2023
 path.3=classes2.dex
 path.2=2/classes.dex
 path.1=0/classes.dex
 path.0=classes.dex
-base.3=D\:\\UTE\\HKII 3\\LapTrinhDiDong\\MR_DAT\\ProjectDAT\\LT_Android_Face_Recognition\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.2=D\:\\UTE\\HKII 3\\LapTrinhDiDong\\MR_DAT\\ProjectDAT\\LT_Android_Face_Recognition\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
-base.1=D\:\\UTE\\HKII 3\\LapTrinhDiDong\\MR_DAT\\ProjectDAT\\LT_Android_Face_Recognition\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.0=D\:\\UTE\\HKII 3\\LapTrinhDiDong\\MR_DAT\\ProjectDAT\\LT_Android_Face_Recognition\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.3=D\:\\HK2_Nam3_CuoiKi\\LT_Android_Face_Recognition\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.2=D\:\\HK2_Nam3_CuoiKi\\LT_Android_Face_Recognition\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
+base.1=D\:\\HK2_Nam3_CuoiKi\\LT_Android_Face_Recognition\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.0=D\:\\HK2_Nam3_CuoiKi\\LT_Android_Face_Recognition\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
