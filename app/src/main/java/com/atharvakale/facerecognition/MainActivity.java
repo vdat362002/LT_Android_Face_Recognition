@@ -138,7 +138,6 @@ public class MainActivity extends AppCompatActivity {
         camera_switch=findViewById(R.id.button5);
         actions=findViewById(R.id.button2);
         textAbove_preview.setText("Recognized Face:");
-//        preview_info.setText("        Recognized Face:");
         //Camera Permission
         if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
             requestPermissions(new String[]{Manifest.permission.CAMERA}, MY_CAMERA_REQUEST_CODE);
@@ -173,9 +172,6 @@ public class MainActivity extends AppCompatActivity {
                                 break;
                             case 4:
                                 clearnameList();
-                                break;
-                            case 5:
-                                loadphoto();
                                 break;
                         }
                     }
@@ -276,7 +272,6 @@ public class MainActivity extends AppCompatActivity {
             AlertDialog.Builder builder = new AlertDialog.Builder(context);
             builder.setTitle("Enter Name");
 
-                // Set up the input
             final EditText input = new EditText(context);
 
             input.setInputType(InputType.TYPE_CLASS_TEXT );
@@ -286,7 +281,6 @@ public class MainActivity extends AppCompatActivity {
             builder.setPositiveButton("ADD", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
-                    //Toast.makeText(context, input.getText().toString(), Toast.LENGTH_SHORT).show();
 
                     //Create and Initialize new object with Face embeddings and Name.
                     SimilarityClassifier.Recognition result = new SimilarityClassifier.Recognition(
@@ -369,7 +363,6 @@ public class MainActivity extends AppCompatActivity {
                             //System.out.println("status:"+checkedItems[i]);
                             if(checkedItems[i])
                             {
-//                                Toast.makeText(MainActivity.this, names[i], Toast.LENGTH_SHORT).show();
                                 registered.remove(names[i]);
                             }
 
@@ -453,8 +446,6 @@ public class MainActivity extends AppCompatActivity {
 
                 bindPreview(cameraProvider);
             } catch (ExecutionException | InterruptedException e) {
-                // No errors need to be handled for this in Future.
-                // This should never be reached.
             }
         }, ContextCompat.getMainExecutor(this));
     }
@@ -486,13 +477,10 @@ public class MainActivity extends AppCompatActivity {
 
 
                 @SuppressLint("UnsafeExperimentalUsageError")
-                // Camera Feed-->Analyzer-->ImageProxy-->mediaImage-->InputImage(needed for ML kit face detection)
-
                 Image mediaImage = imageProxy.getImage();
 
                 if (mediaImage != null) {
                     image = InputImage.fromMediaImage(mediaImage, imageProxy.getImageInfo().getRotationDegrees());
-//                    System.out.println("Rotation "+imageProxy.getImageInfo().getRotationDegrees());
                 }
 
                 //Process acquired image to detect faces
@@ -505,29 +493,24 @@ public class MainActivity extends AppCompatActivity {
 
                                                 if(faces.size()!=0) {
 
-                                                    Face face = faces.get(0); //Get first face from detected faces
+                                                    Face face = faces.get(0);
 
-                                                    //mediaImage to Bitmap
                                                     Bitmap frame_bmp = toBitmap(mediaImage);
 
                                                     int rot = imageProxy.getImageInfo().getRotationDegrees();
 
-                                                    //Adjust orientation of Face
                                                     Bitmap frame_bmp1 = rotateBitmap(frame_bmp, rot, false, false);
 
-                                                    //Get bounding box of face
                                                     RectF boundingBox = new RectF(face.getBoundingBox());
 
-                                                    //Crop out bounding box from whole Bitmap(image)
                                                     Bitmap cropped_face = getCropBitmapByCPU(frame_bmp1, boundingBox);
 
                                                     if(flipX)
                                                         cropped_face = rotateBitmap(cropped_face, 0, flipX, false);
-                                                    //Scale the acquired Face to 112*112 which is required input for model
                                                     Bitmap scaled = getResizedBitmap(cropped_face, 112, 112);
 
                                                     if(start)
-                                                        recognizeImage(scaled); //Send scaled bitmap to create face embeddings.
+                                                        recognizeImage(scaled);
                                                 }
                                                 else
                                                 {
@@ -560,10 +543,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void recognizeImage(final Bitmap bitmap) {
 
-        // set Face to Preview
         face_preview.setImageBitmap(bitmap);
-
-        //Create ByteBuffer to store normalized image
 
         ByteBuffer imgData = ByteBuffer.allocateDirect(1 * inputSize * inputSize * 3 * 4);
 
@@ -571,7 +551,6 @@ public class MainActivity extends AppCompatActivity {
 
         intValues = new int[inputSize * inputSize];
 
-        //get pixel values from Bitmap to normalize
         bitmap.getPixels(intValues, 0, bitmap.getWidth(), 0, 0, bitmap.getWidth(), bitmap.getHeight());
 
         imgData.rewind();
@@ -592,35 +571,34 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }
-        //imgData is input to our model
+
         Object[] inputArray = {imgData};
 
         Map<Integer, Object> outputMap = new HashMap<>();
 
 
-        embeedings = new float[1][OUTPUT_SIZE]; //output of model will be stored in this variable
+        embeedings = new float[1][OUTPUT_SIZE];
 
         outputMap.put(0, embeedings);
 
-        tfLite.runForMultipleInputsOutputs(inputArray, outputMap); //Run model
+        tfLite.runForMultipleInputsOutputs(inputArray, outputMap);
 
         float distance_local = Float.MAX_VALUE;
         String id = "0";
         String label = "?";
 
-        //Compare new face with saved Faces.
         if (registered.size() > 0) {
 
-            final List<Pair<String, Float>> nearest = findNearest(embeedings[0]);//Find 2 closest matching face
+            final List<Pair<String, Float>> nearest = findNearest(embeedings[0]);
 
             if (nearest.get(0) != null) {
 
-                final String name = nearest.get(0).first; //get name and distance of closest matching face
+                final String name = nearest.get(0).first;
                // label = name;
                 distance_local = nearest.get(0).second;
                 if (developerMode)
                 {
-                    if(distance_local<distance) //If distance between Closest found face is more than 1.000 ,then output UNKNOWN face.
+                    if(distance_local<distance)
                         reco_name.setText("Nearest: "+name +"\nDist: "+ String.format("%.3f",distance_local)+"\n2nd Nearest: "+nearest.get(1).first +"\nDist: "+ String.format("%.3f",nearest.get(1).second));
                     else
                         reco_name.setText("Unknown "+"\nDist: "+String.format("%.3f",distance_local)+"\nNearest: "+name +"\nDist: "+ String.format("%.3f",distance_local)+"\n2nd Nearest: "+nearest.get(1).first +"\nDist: "+ String.format("%.3f",nearest.get(1).second));
@@ -628,7 +606,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else
                 {
-                    if(distance_local<distance) {//If distance between Closest found face is more than 1.000 ,then output UNKNOWN face.
+                    if(distance_local<distance) {
                         reco_name.setText(name);
                         System.out.println("distance_local: " + distance_local);
                     }
@@ -638,13 +616,11 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-
-
     //Compare Faces by distance between face embeddings
     private List<Pair<String, Float>> findNearest(float[] emb) {
         List<Pair<String, Float>> neighbour_list = new ArrayList<Pair<String, Float>>();
-        Pair<String, Float> ret = null; //to get closest match
-        Pair<String, Float> prev_ret = null; //to get second closest match
+        Pair<String, Float> ret = null;
+        Pair<String, Float> prev_ret = null;
         for (Map.Entry<String, SimilarityClassifier.Recognition> entry : registered.entrySet())
         {
 
@@ -713,15 +689,12 @@ public class MainActivity extends AppCompatActivity {
             Bitmap bitmap, int rotationDegrees, boolean flipX, boolean flipY) {
         Matrix matrix = new Matrix();
 
-        // Rotate the image back to straight.
         matrix.postRotate(rotationDegrees);
 
-        // Mirror the image along the X or Y axis.
         matrix.postScale(flipX ? -1.0f : 1.0f, flipY ? -1.0f : 1.0f);
         Bitmap rotatedBitmap =
                 Bitmap.createBitmap(bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight(), matrix, true);
 
-        // Recycle the old bitmap if it has changed.
         if (rotatedBitmap != bitmap) {
             bitmap.recycle();
         }
@@ -818,9 +791,9 @@ public class MainActivity extends AppCompatActivity {
         return BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.length);
     }
 
-    //Save Faces to Shared Preferences.Conversion of Recognition objects to json string
+    //Lưu Faces to Shared Preferences.Conversion of Recognition objects to json string
     private void insertToSP(HashMap<String, SimilarityClassifier.Recognition> jsonMap,int mode) {
-        if(mode==1)  //mode: 0:save all, 1:clear all, 2:update all
+        if(mode==1)
             jsonMap.clear();
         else if (mode==0)
             jsonMap.putAll(readFromSP());
@@ -828,7 +801,6 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences("HashMap", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("map", jsonString);
-        //System.out.println("Input josn"+jsonString.toString());
         editor.apply();
         Toast.makeText(context, "Recognitions Saved", Toast.LENGTH_SHORT).show();
     }
@@ -849,23 +821,9 @@ public class MainActivity extends AppCompatActivity {
                 output[0][counter]= ((Double) arrayList.get(counter)).floatValue();
             }
             entry.getValue().setExtra(output);
-
-            //System.out.println("Entry output "+entry.getKey()+" "+entry.getValue().getExtra() );
-
         }
-//        System.out.println("OUTPUT"+ Arrays.deepToString(outut));
         Toast.makeText(context, "Recognitions Loaded", Toast.LENGTH_SHORT).show();
         return retrievedMap;
-    }
-
-    //Load Photo from phone storage
-    private void loadphoto()
-    {
-        start=false;
-        Intent intent = new Intent();
-        intent.setType("image/*");
-        intent.setAction(Intent.ACTION_GET_CONTENT);
-        startActivityForResult(Intent.createChooser(intent, "Select Picture"), SELECT_PICTURE);
     }
 
     //Similar Analyzing Procedure
@@ -946,4 +904,3 @@ public class MainActivity extends AppCompatActivity {
         return image;
     }
 }
-
