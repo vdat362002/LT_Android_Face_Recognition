@@ -4,7 +4,11 @@
             "outputFile": "com.atharvakale.facerecognition.app-mergeDebugResources-45:/values-w360dp-port-v13/values-w360dp-port-v13.xml",
             "map": [
                 {
+<<<<<<< HEAD
+                    "source": "C:\\Users\\Tang Phuc Toan\\.gradle\\caches\\transforms-3\\b6f52d92dea29c0a7f49d4078033a89a\\transformed\\material-1.6.1\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
+=======
                     "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\b6f52d92dea29c0a7f49d4078033a89a\\transformed\\material-1.6.1\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
+>>>>>>> 76825a082bc4f003edd39e831bf1b76ac91aa950
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

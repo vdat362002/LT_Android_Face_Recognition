@@ -4,6 +4,9 @@
             "outputFile": "com.atharvakale.facerecognition.app-mergeDebugResources-45:/values-v24/values-v24.xml",
             "map": [
                 {
+<<<<<<< HEAD
+                    "source": "C:\\Users\\Tang Phuc Toan\\.gradle\\caches\\transforms-3\\b6f52d92dea29c0a7f49d4078033a89a\\transformed\\material-1.6.1\\res\\values-v24\\values-v24.xml",
+=======
                     "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\4d669feee3bbcaf630ded0ac4934be61\\transformed\\appcompat-1.4.2\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
@@ -15,6 +18,7 @@
                 },
                 {
                     "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\b6f52d92dea29c0a7f49d4078033a89a\\transformed\\material-1.6.1\\res\\values-v24\\values-v24.xml",
+>>>>>>> 76825a082bc4f003edd39e831bf1b76ac91aa950
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -31,6 +35,19 @@
                         "endColumns": "84,98,86,100,10,10,10,10",
                         "endOffsets": "427,526,613,714,913,1126,1327,1542"
                     }
+<<<<<<< HEAD
+                },
+                {
+                    "source": "C:\\Users\\Tang Phuc Toan\\.gradle\\caches\\transforms-3\\4d669feee3bbcaf630ded0ac4934be61\\transformed\\appcompat-1.4.2\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+=======
+>>>>>>> 76825a082bc4f003edd39e831bf1b76ac91aa950
                 }
             ]
         }
