@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\Tang Phuc Toan\\.gradle\\daemon\\7.3.3\\com.atharvakale.facerecognition.app-merged_res-47:\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\Tang Phuc Toan\\.gradle\\daemon\\7.3.3\\com.atharvakale.facerecognition.app-main-49:\\mipmap-xhdpi\\ic_launcher.png"
     },
@@ -42,12 +43,41 @@
     {
         "merged": "C:\\Users\\Tang Phuc Toan\\.gradle\\daemon\\7.3.3\\com.atharvakale.facerecognition.app-merged_res-47:\\raw_facialrecognition1.json.flat",
         "source": "C:\\Users\\Tang Phuc Toan\\.gradle\\daemon\\7.3.3\\com.atharvakale.facerecognition.app-main-49:\\raw\\facialrecognition1.json"
+=======
+        "merged": "com.atharvakale.facerecognition.app-merged_res-47:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.atharvakale.facerecognition.app-main-49:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.atharvakale.facerecognition.app-merged_res-47:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.atharvakale.facerecognition.app-main-49:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.atharvakale.facerecognition.app-merged_res-47:/drawable-v24_cam.png.flat",
+        "source": "com.atharvakale.facerecognition.app-main-49:/drawable-v24/cam.png"
+    },
+    {
+        "merged": "com.atharvakale.facerecognition.app-merged_res-47:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.atharvakale.facerecognition.app-main-49:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.atharvakale.facerecognition.app-merged_res-47:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.atharvakale.facerecognition.app-main-49:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.atharvakale.facerecognition.app-merged_res-47:/menu_menu_main.xml.flat",
+        "source": "com.atharvakale.facerecognition.app-main-49:/menu/menu_main.xml"
+    },
+    {
+        "merged": "com.atharvakale.facerecognition.app-merged_res-47:/layout_activity_splash_screen.xml.flat",
+        "source": "com.atharvakale.facerecognition.app-main-49:/layout/activity_splash_screen.xml"
+>>>>>>> 76825a082bc4f003edd39e831bf1b76ac91aa950
     },
     {
         "merged": "com.atharvakale.facerecognition.app-merged_res-47:/layout_activity_main.xml.flat",
         "source": "com.atharvakale.facerecognition.app-main-49:/layout/activity_main.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\Tang Phuc Toan\\.gradle\\daemon\\7.3.3\\com.atharvakale.facerecognition.app-merged_res-47:\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\Tang Phuc Toan\\.gradle\\daemon\\7.3.3\\com.atharvakale.facerecognition.app-main-49:\\mipmap-xxxhdpi\\ic_launcher.png"
     },
@@ -98,5 +128,69 @@
     {
         "merged": "C:\\Users\\Tang Phuc Toan\\.gradle\\daemon\\7.3.3\\com.atharvakale.facerecognition.app-merged_res-47:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Tang Phuc Toan\\.gradle\\daemon\\7.3.3\\com.atharvakale.facerecognition.app-main-49:\\mipmap-xxhdpi\\ic_launcher_round.png"
+=======
+        "merged": "com.atharvakale.facerecognition.app-merged_res-47:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.atharvakale.facerecognition.app-main-49:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.atharvakale.facerecognition.app-merged_res-47:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.atharvakale.facerecognition.app-main-49:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.atharvakale.facerecognition.app-merged_res-47:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.atharvakale.facerecognition.app-main-49:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.atharvakale.facerecognition.app-merged_res-47:/drawable_image.xml.flat",
+        "source": "com.atharvakale.facerecognition.app-main-49:/drawable/image.xml"
+    },
+    {
+        "merged": "com.atharvakale.facerecognition.app-merged_res-47:/navigation_nav_graph.xml.flat",
+        "source": "com.atharvakale.facerecognition.app-main-49:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "com.atharvakale.facerecognition.app-merged_res-47:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.atharvakale.facerecognition.app-pngs-42:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.atharvakale.facerecognition.app-merged_res-47:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.atharvakale.facerecognition.app-main-49:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.atharvakale.facerecognition.app-merged_res-47:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.atharvakale.facerecognition.app-main-49:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.atharvakale.facerecognition.app-merged_res-47:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.atharvakale.facerecognition.app-main-49:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.atharvakale.facerecognition.app-merged_res-47:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.atharvakale.facerecognition.app-main-49:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.atharvakale.facerecognition.app-merged_res-47:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.atharvakale.facerecognition.app-main-49:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.atharvakale.facerecognition.app-merged_res-47:/drawable-v24_round_bg.xml.flat",
+        "source": "com.atharvakale.facerecognition.app-main-49:/drawable-v24/round_bg.xml"
+    },
+    {
+        "merged": "com.atharvakale.facerecognition.app-merged_res-47:/raw_facialrecognition1.json.flat",
+        "source": "com.atharvakale.facerecognition.app-main-49:/raw/facialrecognition1.json"
+    },
+    {
+        "merged": "com.atharvakale.facerecognition.app-merged_res-47:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.atharvakale.facerecognition.app-main-49:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.atharvakale.facerecognition.app-merged_res-47:/drawable-v24_face_icon2.png.flat",
+        "source": "com.atharvakale.facerecognition.app-main-49:/drawable-v24/face_icon2.png"
+    },
+    {
+        "merged": "com.atharvakale.facerecognition.app-merged_res-47:/layout_activity_uploadimge.xml.flat",
+        "source": "com.atharvakale.facerecognition.app-main-49:/layout/activity_uploadimge.xml"
+>>>>>>> 76825a082bc4f003edd39e831bf1b76ac91aa950
     }
 ]

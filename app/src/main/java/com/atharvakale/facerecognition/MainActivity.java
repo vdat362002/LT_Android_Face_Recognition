@@ -385,46 +385,6 @@ public class MainActivity extends AppCompatActivity {
         dialog.show();
     }
     }
-    private void hyperparameters()
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(context);
-        builder.setTitle("Euclidean Distance");
-        builder.setMessage("0.00 -> Perfect Match\n1.00 -> Default\nTurn On Developer Mode to find optimum value\n\nCurrent Value:");
-        // Set up the input
-        final EditText input = new EditText(context);
-
-        input.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
-        builder.setView(input);
-        SharedPreferences sharedPref = getSharedPreferences("Distance",Context.MODE_PRIVATE);
-        distance = sharedPref.getFloat("distance",1.00f);
-        input.setText(String.valueOf(distance));
-        // Set up the buttons
-        builder.setPositiveButton("Update", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                //Toast.makeText(context, input.getText().toString(), Toast.LENGTH_SHORT).show();
-
-               distance= Float.parseFloat(input.getText().toString());
-
-
-                SharedPreferences sharedPref = getSharedPreferences("Distance",Context.MODE_PRIVATE);
-                SharedPreferences.Editor editor = sharedPref.edit();
-                editor.putFloat("distance", distance);
-                editor.apply();
-
-            }
-        });
-        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-
-                dialog.cancel();
-            }
-        });
-
-        builder.show();
-    }
-
 
     private void displaynameListview()
     {

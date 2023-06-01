@@ -4,7 +4,11 @@
             "outputFile": "com.atharvakale.facerecognition.app-mergeDebugResources-45:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\Tang Phuc Toan\\.gradle\\caches\\transforms-3\\4d669feee3bbcaf630ded0ac4934be61\\transformed\\appcompat-1.4.2\\res\\values-watch-v20\\values-watch-v20.xml",
+=======
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\4d669feee3bbcaf630ded0ac4934be61\\transformed\\appcompat-1.4.2\\res\\values-watch-v20\\values-watch-v20.xml",
+>>>>>>> 76825a082bc4f003edd39e831bf1b76ac91aa950
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

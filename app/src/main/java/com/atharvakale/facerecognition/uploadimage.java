@@ -199,7 +199,7 @@ public class uploadimage extends AppCompatActivity {
                 System.out.println("nearest.get(0).second: " + nearest.get(0).second);
 
                 if (distance_local < distance) {//If distance between Closest found face is more than 1.000 ,then output UNKNOWN face.
-                    resutl.setText(name + " full");
+                    resutl.setText(name);
                     System.out.println("name: " + name);
                 }
                 else
