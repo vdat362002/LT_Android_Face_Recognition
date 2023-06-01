@@ -1,31 +1,12 @@
-<<<<<<< HEAD
-#Thu Jun 01 18:28:56 ICT 2023
-=======
-<<<<<<< HEAD
-#Thu Jun 01 13:50:03 ICT 2023
-base.0=G\:\\HK2_Nam3\\LTDD\\LT_Android_Face_Recognition\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=G\:\\HK2_Nam3\\LTDD\\LT_Android_Face_Recognition\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=G\:\\HK2_Nam3\\LTDD\\LT_Android_Face_Recognition\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
-base.3=G\:\\HK2_Nam3\\LTDD\\LT_Android_Face_Recognition\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+#Fri Jun 02 02:13:36 ICT 2023
+base.0=G\:\\HK2_Nam3\\LTDD\\LT_Android_Face_Recognition-main\\LT_Android_Face_Recognition\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=G\:\\HK2_Nam3\\LTDD\\LT_Android_Face_Recognition-main\\LT_Android_Face_Recognition\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=G\:\\HK2_Nam3\\LTDD\\LT_Android_Face_Recognition-main\\LT_Android_Face_Recognition\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
+base.3=G\:\\HK2_Nam3\\LTDD\\LT_Android_Face_Recognition-main\\LT_Android_Face_Recognition\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=2/classes.dex
 path.3=classes2.dex
-=======
-#Thu Jun 01 11:37:38 ICT 2023
->>>>>>> ef2fa5a4b7cbbba3f932afeb5c4a5064c99c11ce
-path.3=classes2.dex
-path.2=2/classes.dex
-path.1=0/classes.dex
-path.0=classes.dex
-base.3=D\:\\HK2_Nam3_CuoiKi\\LT_Android_Face_Recognition\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.2=D\:\\HK2_Nam3_CuoiKi\\LT_Android_Face_Recognition\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
-base.1=D\:\\HK2_Nam3_CuoiKi\\LT_Android_Face_Recognition\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.0=D\:\\HK2_Nam3_CuoiKi\\LT_Android_Face_Recognition\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-renamed.3=classes4.dex
-renamed.2=classes3.dex
-renamed.1=classes2.dex
->>>>>>> 76825a082bc4f003edd39e831bf1b76ac91aa950
 renamed.0=classes.dex
 renamed.1=classes2.dex
 renamed.2=classes3.dex
