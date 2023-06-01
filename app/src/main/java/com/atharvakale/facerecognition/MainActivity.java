@@ -655,7 +655,8 @@ public class MainActivity extends AppCompatActivity {
 
             if (nearest.get(0) != null) {
 
-                final String name = nearest.get(0).first; //get name and distance of closest matching face
+                String name_0 = nearest.get(0).first; //get name and distance of closest matching face
+                String[] name = name_0.split("_",2);
                // label = name;
                 distance_local = nearest.get(0).second;
                 if (developerMode)
@@ -669,7 +670,8 @@ public class MainActivity extends AppCompatActivity {
                 else
                 {
                     if(distance_local<distance) {//If distance between Closest found face is more than 1.000 ,then output UNKNOWN face.
-                        reco_name.setText(name);
+
+                        reco_name.setText(name[0]);
                         System.out.println("distance_local: " + distance_local);
                     }
                     else
