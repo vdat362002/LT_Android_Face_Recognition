@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Face_Recognition.iml" filepath="$PROJECT_DIR$/.idea/modules/Face_Recognition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OpenCV4313/Face_Recognition.OpenCV4313.iml" filepath="$PROJECT_DIR$/.idea/modules/OpenCV4313/Face_Recognition.OpenCV4313.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OpenCV4313/Face_Recognition.OpenCV4313.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/OpenCV4313/Face_Recognition.OpenCV4313.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OpenCV4313/Face_Recognition.OpenCV4313.main.iml" filepath="$PROJECT_DIR$/.idea/modules/OpenCV4313/Face_Recognition.OpenCV4313.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OpenCV4313/Face_Recognition.OpenCV4313.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/OpenCV4313/Face_Recognition.OpenCV4313.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Face_Recognition.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Face_Recognition.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Face_Recognition.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Face_Recognition.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Face_Recognition.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Face_Recognition.app.main.iml" />

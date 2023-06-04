@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.atharvakale.facerecognition.app-mergeDebugResources-45:/values-h360dp-land-v13/values-h360dp-land-v13.xml",
+            "outputFile": "com.atharvakale.facerecognition.app-mergeDebugResources-46:/values-h360dp-land-v13/values-h360dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Tang Phuc Toan\\.gradle\\caches\\transforms-3\\b6f52d92dea29c0a7f49d4078033a89a\\transformed\\material-1.6.1\\res\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",
+                    "source": "/Users/bale/.gradle/caches/transforms-3/b6f52d92dea29c0a7f49d4078033a89a/transformed/material-1.6.1/res/values-h360dp-land-v13/values-h360dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

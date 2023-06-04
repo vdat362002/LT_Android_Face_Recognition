@@ -55,6 +55,7 @@ import androidx.lifecycle.LifecycleOwner;
 
 import android.os.ParcelFileDescriptor;
 import android.text.InputType;
+import android.util.Log;
 import android.util.Pair;
 import android.util.Size;
 import android.view.View;
@@ -66,6 +67,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.opencv.android.OpenCVLoader;
 import org.tensorflow.lite.Interpreter;
 
 import java.io.ByteArrayOutputStream;
@@ -86,6 +88,14 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
 public class MainActivity extends AppCompatActivity {
+    static {
+        if(OpenCVLoader.initDebug()) {
+            Log.d("MainActivity", "OpenCV is loaded into project");
+        }
+        else {
+            Log.d("MainActivity", "Can't load OpenCV !!!");
+        }
+    }
     FaceDetector detector;
 
     private ListenableFuture<ProcessCameraProvider> cameraProviderFuture;

@@ -28,7 +28,6 @@ public interface SimilarityClassifier {
     /** Display name for the recognition. */
     private final String title;
 
-
     private final Float distance;
     private Object extra;
 
