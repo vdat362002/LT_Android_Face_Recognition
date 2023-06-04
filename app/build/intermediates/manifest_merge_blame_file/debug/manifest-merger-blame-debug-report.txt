@@ -16,8 +16,8 @@
 12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 12-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:6:5-80
 12-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:6:22-77
-13
-14    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 15    <!-- <uses-sdk android:minSdkVersion="14"/> -->
 16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 16-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/bale/.gradle/caches/transforms-3/eac624d64e2d469c80e3886867fb5f84/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
@@ -25,196 +25,194 @@
 17    <uses-permission android:name="android.permission.INTERNET" />
 17-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/bale/.gradle/caches/transforms-3/eac624d64e2d469c80e3886867fb5f84/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:26:5-67
 17-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/bale/.gradle/caches/transforms-3/eac624d64e2d469c80e3886867fb5f84/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:26:22-64
-18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-19    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-20
-21    <application
-21-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:8:5-32:19
-22        android:allowBackup="true"
-22-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:9:9-35
-23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-23-->[androidx.core:core:1.8.0] /Users/bale/.gradle/caches/transforms-3/0638d9dacb5fd10604e28ec2b4d3c80b/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
-24        android:debuggable="true"
-25        android:icon="@drawable/face_icon2"
-25-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:10:9-44
-26        android:label="@string/app_name"
-26-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:11:9-41
-27        android:largeHeap="true"
-27-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:12:9-33
-28        android:roundIcon="@drawable/face_icon2"
-28-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:13:9-49
-29        android:supportsRtl="true"
-29-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:14:9-35
-30        android:testOnly="true"
-31        android:theme="@style/Theme.FaceRecognition.NoActionBar" >
-31-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:15:9-65
-32        <activity
-32-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:16:9-18:40
-33            android:name="com.atharvakale.facerecognition.CameraActivity"
-33-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:17:13-43
-34            android:exported="false" />
-34-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:18:13-37
-35        <activity android:name="com.atharvakale.facerecognition.MainActivity" />
-35-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:19:9-50
-35-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:19:19-47
-36        <activity android:name="com.atharvakale.facerecognition.uploadimage" />
-36-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:20:9-49
-36-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:20:19-46
-37        <activity
-37-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:21:9-31:20
-38            android:name="com.atharvakale.facerecognition.splash_screen"
-38-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:22:13-42
-39            android:exported="true"
-39-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:23:13-36
-40            android:label="@string/app_name"
-40-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:24:13-45
-41            android:theme="@style/Theme.FaceRecognition.NoActionBar" >
-41-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:25:13-69
-42            <intent-filter>
-42-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:26:13-30:29
-43                <action android:name="android.intent.action.MAIN" />
-43-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:27:17-69
-43-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:27:25-66
-44
-45                <category android:name="android.intent.category.LAUNCHER" />
-45-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:29:17-77
-45-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:29:27-74
-46            </intent-filter>
-47        </activity>
-48
-49        <service
-49-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/bale/.gradle/caches/transforms-3/7a0873fcf32615e9459f553b4cf35bae/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:9:9-15:19
-50            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
-50-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/bale/.gradle/caches/transforms-3/7a0873fcf32615e9459f553b4cf35bae/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:10:13-91
-51            android:directBootAware="true"
-51-->[com.google.mlkit:common:18.1.0] /Users/bale/.gradle/caches/transforms-3/a61f19ca5335b2ac7f077df455fa1e56/transformed/jetified-common-18.1.0/AndroidManifest.xml:17:13-43
-52            android:exported="false" >
-52-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/bale/.gradle/caches/transforms-3/7a0873fcf32615e9459f553b4cf35bae/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:11:13-37
-53            <meta-data
-53-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/bale/.gradle/caches/transforms-3/7a0873fcf32615e9459f553b4cf35bae/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:12:13-14:85
-54                android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar"
-54-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/bale/.gradle/caches/transforms-3/7a0873fcf32615e9459f553b4cf35bae/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:13:17-114
-55                android:value="com.google.firebase.components.ComponentRegistrar" />
-55-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/bale/.gradle/caches/transforms-3/7a0873fcf32615e9459f553b4cf35bae/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:14:17-82
-56            <meta-data
-56-->[com.google.mlkit:vision-common:17.1.0] /Users/bale/.gradle/caches/transforms-3/d80f3c4a07985f2c2748b3c10f8d8780/transformed/jetified-vision-common-17.1.0/AndroidManifest.xml:12:13-14:85
-57                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
-57-->[com.google.mlkit:vision-common:17.1.0] /Users/bale/.gradle/caches/transforms-3/d80f3c4a07985f2c2748b3c10f8d8780/transformed/jetified-vision-common-17.1.0/AndroidManifest.xml:13:17-124
-58                android:value="com.google.firebase.components.ComponentRegistrar" />
-58-->[com.google.mlkit:vision-common:17.1.0] /Users/bale/.gradle/caches/transforms-3/d80f3c4a07985f2c2748b3c10f8d8780/transformed/jetified-vision-common-17.1.0/AndroidManifest.xml:14:17-82
-59            <meta-data
-59-->[com.google.mlkit:common:18.1.0] /Users/bale/.gradle/caches/transforms-3/a61f19ca5335b2ac7f077df455fa1e56/transformed/jetified-common-18.1.0/AndroidManifest.xml:20:13-22:85
-60                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
-60-->[com.google.mlkit:common:18.1.0] /Users/bale/.gradle/caches/transforms-3/a61f19ca5335b2ac7f077df455fa1e56/transformed/jetified-common-18.1.0/AndroidManifest.xml:21:17-120
-61                android:value="com.google.firebase.components.ComponentRegistrar" />
-61-->[com.google.mlkit:common:18.1.0] /Users/bale/.gradle/caches/transforms-3/a61f19ca5335b2ac7f077df455fa1e56/transformed/jetified-common-18.1.0/AndroidManifest.xml:22:17-82
-62        </service>
-63        <service
-63-->[androidx.camera:camera-camera2:1.2.0-alpha04] /Users/bale/.gradle/caches/transforms-3/3e8b92964ac1dcc83aa22dafec736459/transformed/jetified-camera-camera2-1.2.0-alpha04/AndroidManifest.xml:24:9-33:19
-64            android:name="androidx.camera.core.impl.MetadataHolderService"
-64-->[androidx.camera:camera-camera2:1.2.0-alpha04] /Users/bale/.gradle/caches/transforms-3/3e8b92964ac1dcc83aa22dafec736459/transformed/jetified-camera-camera2-1.2.0-alpha04/AndroidManifest.xml:25:13-75
-65            android:enabled="false"
-65-->[androidx.camera:camera-camera2:1.2.0-alpha04] /Users/bale/.gradle/caches/transforms-3/3e8b92964ac1dcc83aa22dafec736459/transformed/jetified-camera-camera2-1.2.0-alpha04/AndroidManifest.xml:26:13-36
-66            android:exported="false" >
-66-->[androidx.camera:camera-camera2:1.2.0-alpha04] /Users/bale/.gradle/caches/transforms-3/3e8b92964ac1dcc83aa22dafec736459/transformed/jetified-camera-camera2-1.2.0-alpha04/AndroidManifest.xml:27:13-37
-67            <meta-data
-67-->[androidx.camera:camera-camera2:1.2.0-alpha04] /Users/bale/.gradle/caches/transforms-3/3e8b92964ac1dcc83aa22dafec736459/transformed/jetified-camera-camera2-1.2.0-alpha04/AndroidManifest.xml:30:13-32:89
-68                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
-68-->[androidx.camera:camera-camera2:1.2.0-alpha04] /Users/bale/.gradle/caches/transforms-3/3e8b92964ac1dcc83aa22dafec736459/transformed/jetified-camera-camera2-1.2.0-alpha04/AndroidManifest.xml:31:17-103
-69                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
-69-->[androidx.camera:camera-camera2:1.2.0-alpha04] /Users/bale/.gradle/caches/transforms-3/3e8b92964ac1dcc83aa22dafec736459/transformed/jetified-camera-camera2-1.2.0-alpha04/AndroidManifest.xml:32:17-86
-70        </service>
-71
-72        <provider
-72-->[androidx.emoji2:emoji2:1.0.0] /Users/bale/.gradle/caches/transforms-3/55166facbbf2a1313baa8ab94e05819f/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
-73            android:name="androidx.startup.InitializationProvider"
-73-->[androidx.emoji2:emoji2:1.0.0] /Users/bale/.gradle/caches/transforms-3/55166facbbf2a1313baa8ab94e05819f/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
-74            android:authorities="com.atharvakale.facerecognition.androidx-startup"
-74-->[androidx.emoji2:emoji2:1.0.0] /Users/bale/.gradle/caches/transforms-3/55166facbbf2a1313baa8ab94e05819f/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
-75            android:exported="false" >
-75-->[androidx.emoji2:emoji2:1.0.0] /Users/bale/.gradle/caches/transforms-3/55166facbbf2a1313baa8ab94e05819f/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
-76            <meta-data
-76-->[androidx.emoji2:emoji2:1.0.0] /Users/bale/.gradle/caches/transforms-3/55166facbbf2a1313baa8ab94e05819f/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
-77                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-77-->[androidx.emoji2:emoji2:1.0.0] /Users/bale/.gradle/caches/transforms-3/55166facbbf2a1313baa8ab94e05819f/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
-78                android:value="androidx.startup" />
-78-->[androidx.emoji2:emoji2:1.0.0] /Users/bale/.gradle/caches/transforms-3/55166facbbf2a1313baa8ab94e05819f/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
-79            <meta-data
-79-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/bale/.gradle/caches/transforms-3/b17b9092229c57f60fdbffb1af622591/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
-80                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-80-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/bale/.gradle/caches/transforms-3/b17b9092229c57f60fdbffb1af622591/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
-81                android:value="androidx.startup" />
-81-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/bale/.gradle/caches/transforms-3/b17b9092229c57f60fdbffb1af622591/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
-82        </provider>
-83        <provider
-83-->[com.google.mlkit:common:18.1.0] /Users/bale/.gradle/caches/transforms-3/a61f19ca5335b2ac7f077df455fa1e56/transformed/jetified-common-18.1.0/AndroidManifest.xml:9:9-13:38
-84            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
-84-->[com.google.mlkit:common:18.1.0] /Users/bale/.gradle/caches/transforms-3/a61f19ca5335b2ac7f077df455fa1e56/transformed/jetified-common-18.1.0/AndroidManifest.xml:10:13-78
-85            android:authorities="com.atharvakale.facerecognition.mlkitinitprovider"
-85-->[com.google.mlkit:common:18.1.0] /Users/bale/.gradle/caches/transforms-3/a61f19ca5335b2ac7f077df455fa1e56/transformed/jetified-common-18.1.0/AndroidManifest.xml:11:13-69
-86            android:exported="false"
-86-->[com.google.mlkit:common:18.1.0] /Users/bale/.gradle/caches/transforms-3/a61f19ca5335b2ac7f077df455fa1e56/transformed/jetified-common-18.1.0/AndroidManifest.xml:12:13-37
-87            android:initOrder="99" />
-87-->[com.google.mlkit:common:18.1.0] /Users/bale/.gradle/caches/transforms-3/a61f19ca5335b2ac7f077df455fa1e56/transformed/jetified-common-18.1.0/AndroidManifest.xml:13:13-35
-88
-89        <activity
-89-->[com.google.android.gms:play-services-base:18.0.1] /Users/bale/.gradle/caches/transforms-3/7f75b09f886cfa54a0b89c45297c5276/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
-90            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-90-->[com.google.android.gms:play-services-base:18.0.1] /Users/bale/.gradle/caches/transforms-3/7f75b09f886cfa54a0b89c45297c5276/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
-91            android:exported="false"
-91-->[com.google.android.gms:play-services-base:18.0.1] /Users/bale/.gradle/caches/transforms-3/7f75b09f886cfa54a0b89c45297c5276/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
-92            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-92-->[com.google.android.gms:play-services-base:18.0.1] /Users/bale/.gradle/caches/transforms-3/7f75b09f886cfa54a0b89c45297c5276/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
-93
-94        <meta-data
-94-->[com.google.android.gms:play-services-basement:18.0.0] /Users/bale/.gradle/caches/transforms-3/2981d3657b44a7c8ddb6ef9f9a05182f/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
-95            android:name="com.google.android.gms.version"
-95-->[com.google.android.gms:play-services-basement:18.0.0] /Users/bale/.gradle/caches/transforms-3/2981d3657b44a7c8ddb6ef9f9a05182f/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
-96            android:value="@integer/google_play_services_version" />
-96-->[com.google.android.gms:play-services-basement:18.0.0] /Users/bale/.gradle/caches/transforms-3/2981d3657b44a7c8ddb6ef9f9a05182f/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
-97
-98        <service
-98-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/bale/.gradle/caches/transforms-3/eac624d64e2d469c80e3886867fb5f84/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
-99            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-99-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/bale/.gradle/caches/transforms-3/eac624d64e2d469c80e3886867fb5f84/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
-100            android:exported="false" >
-100-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/bale/.gradle/caches/transforms-3/eac624d64e2d469c80e3886867fb5f84/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
-101            <meta-data
-101-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/bale/.gradle/caches/transforms-3/eac624d64e2d469c80e3886867fb5f84/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
-102                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-102-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/bale/.gradle/caches/transforms-3/eac624d64e2d469c80e3886867fb5f84/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
-103                android:value="cct" />
-103-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/bale/.gradle/caches/transforms-3/eac624d64e2d469c80e3886867fb5f84/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
-104        </service>
-105        <service
-105-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/bale/.gradle/caches/transforms-3/e01308c6f215229c6062e5d992e4168e/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
-106            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-106-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/bale/.gradle/caches/transforms-3/e01308c6f215229c6062e5d992e4168e/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
-107            android:exported="false"
-107-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/bale/.gradle/caches/transforms-3/e01308c6f215229c6062e5d992e4168e/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
-108            android:permission="android.permission.BIND_JOB_SERVICE" >
-108-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/bale/.gradle/caches/transforms-3/e01308c6f215229c6062e5d992e4168e/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
-109        </service>
-110
-111        <receiver
-111-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/bale/.gradle/caches/transforms-3/e01308c6f215229c6062e5d992e4168e/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
-112            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-112-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/bale/.gradle/caches/transforms-3/e01308c6f215229c6062e5d992e4168e/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
-113            android:exported="false" />
-113-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/bale/.gradle/caches/transforms-3/e01308c6f215229c6062e5d992e4168e/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
-114
-115        <uses-library
-115-->[androidx.window:window:1.0.0] /Users/bale/.gradle/caches/transforms-3/667a55a46d542d987d1cb5838a22b5f6/transformed/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
-116            android:name="androidx.window.extensions"
-116-->[androidx.window:window:1.0.0] /Users/bale/.gradle/caches/transforms-3/667a55a46d542d987d1cb5838a22b5f6/transformed/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
-117            android:required="false" />
-117-->[androidx.window:window:1.0.0] /Users/bale/.gradle/caches/transforms-3/667a55a46d542d987d1cb5838a22b5f6/transformed/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
-118        <uses-library
-118-->[androidx.window:window:1.0.0] /Users/bale/.gradle/caches/transforms-3/667a55a46d542d987d1cb5838a22b5f6/transformed/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
-119            android:name="androidx.window.sidecar"
-119-->[androidx.window:window:1.0.0] /Users/bale/.gradle/caches/transforms-3/667a55a46d542d987d1cb5838a22b5f6/transformed/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
-120            android:required="false" />
-120-->[androidx.window:window:1.0.0] /Users/bale/.gradle/caches/transforms-3/667a55a46d542d987d1cb5838a22b5f6/transformed/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
-121    </application>
-122
-123</manifest>
+18
+19    <application
+19-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:8:5-32:19
+20        android:allowBackup="true"
+20-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:9:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.8.0] /Users/bale/.gradle/caches/transforms-3/0638d9dacb5fd10604e28ec2b4d3c80b/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+22        android:debuggable="true"
+23        android:icon="@drawable/face_icon2"
+23-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:10:9-44
+24        android:label="@string/app_name"
+24-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:11:9-41
+25        android:largeHeap="true"
+25-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:12:9-33
+26        android:roundIcon="@drawable/face_icon2"
+26-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:13:9-49
+27        android:supportsRtl="true"
+27-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:14:9-35
+28        android:testOnly="true"
+29        android:theme="@style/Theme.FaceRecognition.NoActionBar" >
+29-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:15:9-65
+30        <activity
+30-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:16:9-18:40
+31            android:name="com.atharvakale.facerecognition.CameraActivity"
+31-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:17:13-43
+32            android:exported="false" />
+32-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:18:13-37
+33        <activity android:name="com.atharvakale.facerecognition.MainActivity" />
+33-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:19:9-50
+33-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:19:19-47
+34        <activity android:name="com.atharvakale.facerecognition.uploadimage" />
+34-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:20:9-49
+34-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:20:19-46
+35        <activity
+35-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:21:9-31:20
+36            android:name="com.atharvakale.facerecognition.splash_screen"
+36-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:22:13-42
+37            android:exported="true"
+37-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:23:13-36
+38            android:label="@string/app_name"
+38-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:24:13-45
+39            android:theme="@style/Theme.FaceRecognition.NoActionBar" >
+39-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:25:13-69
+40            <intent-filter>
+40-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:26:13-30:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:27:17-69
+41-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:27:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:29:17-77
+43-->/Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:29:27-74
+44            </intent-filter>
+45        </activity>
+46
+47        <service
+47-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/bale/.gradle/caches/transforms-3/7a0873fcf32615e9459f553b4cf35bae/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:9:9-15:19
+48            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+48-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/bale/.gradle/caches/transforms-3/7a0873fcf32615e9459f553b4cf35bae/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:10:13-91
+49            android:directBootAware="true"
+49-->[com.google.mlkit:common:18.1.0] /Users/bale/.gradle/caches/transforms-3/a61f19ca5335b2ac7f077df455fa1e56/transformed/jetified-common-18.1.0/AndroidManifest.xml:17:13-43
+50            android:exported="false" >
+50-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/bale/.gradle/caches/transforms-3/7a0873fcf32615e9459f553b4cf35bae/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:11:13-37
+51            <meta-data
+51-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/bale/.gradle/caches/transforms-3/7a0873fcf32615e9459f553b4cf35bae/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:12:13-14:85
+52                android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar"
+52-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/bale/.gradle/caches/transforms-3/7a0873fcf32615e9459f553b4cf35bae/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:13:17-114
+53                android:value="com.google.firebase.components.ComponentRegistrar" />
+53-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/bale/.gradle/caches/transforms-3/7a0873fcf32615e9459f553b4cf35bae/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:14:17-82
+54            <meta-data
+54-->[com.google.mlkit:vision-common:17.1.0] /Users/bale/.gradle/caches/transforms-3/d80f3c4a07985f2c2748b3c10f8d8780/transformed/jetified-vision-common-17.1.0/AndroidManifest.xml:12:13-14:85
+55                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+55-->[com.google.mlkit:vision-common:17.1.0] /Users/bale/.gradle/caches/transforms-3/d80f3c4a07985f2c2748b3c10f8d8780/transformed/jetified-vision-common-17.1.0/AndroidManifest.xml:13:17-124
+56                android:value="com.google.firebase.components.ComponentRegistrar" />
+56-->[com.google.mlkit:vision-common:17.1.0] /Users/bale/.gradle/caches/transforms-3/d80f3c4a07985f2c2748b3c10f8d8780/transformed/jetified-vision-common-17.1.0/AndroidManifest.xml:14:17-82
+57            <meta-data
+57-->[com.google.mlkit:common:18.1.0] /Users/bale/.gradle/caches/transforms-3/a61f19ca5335b2ac7f077df455fa1e56/transformed/jetified-common-18.1.0/AndroidManifest.xml:20:13-22:85
+58                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+58-->[com.google.mlkit:common:18.1.0] /Users/bale/.gradle/caches/transforms-3/a61f19ca5335b2ac7f077df455fa1e56/transformed/jetified-common-18.1.0/AndroidManifest.xml:21:17-120
+59                android:value="com.google.firebase.components.ComponentRegistrar" />
+59-->[com.google.mlkit:common:18.1.0] /Users/bale/.gradle/caches/transforms-3/a61f19ca5335b2ac7f077df455fa1e56/transformed/jetified-common-18.1.0/AndroidManifest.xml:22:17-82
+60        </service>
+61        <service
+61-->[androidx.camera:camera-camera2:1.2.0-alpha04] /Users/bale/.gradle/caches/transforms-3/3e8b92964ac1dcc83aa22dafec736459/transformed/jetified-camera-camera2-1.2.0-alpha04/AndroidManifest.xml:24:9-33:19
+62            android:name="androidx.camera.core.impl.MetadataHolderService"
+62-->[androidx.camera:camera-camera2:1.2.0-alpha04] /Users/bale/.gradle/caches/transforms-3/3e8b92964ac1dcc83aa22dafec736459/transformed/jetified-camera-camera2-1.2.0-alpha04/AndroidManifest.xml:25:13-75
+63            android:enabled="false"
+63-->[androidx.camera:camera-camera2:1.2.0-alpha04] /Users/bale/.gradle/caches/transforms-3/3e8b92964ac1dcc83aa22dafec736459/transformed/jetified-camera-camera2-1.2.0-alpha04/AndroidManifest.xml:26:13-36
+64            android:exported="false" >
+64-->[androidx.camera:camera-camera2:1.2.0-alpha04] /Users/bale/.gradle/caches/transforms-3/3e8b92964ac1dcc83aa22dafec736459/transformed/jetified-camera-camera2-1.2.0-alpha04/AndroidManifest.xml:27:13-37
+65            <meta-data
+65-->[androidx.camera:camera-camera2:1.2.0-alpha04] /Users/bale/.gradle/caches/transforms-3/3e8b92964ac1dcc83aa22dafec736459/transformed/jetified-camera-camera2-1.2.0-alpha04/AndroidManifest.xml:30:13-32:89
+66                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+66-->[androidx.camera:camera-camera2:1.2.0-alpha04] /Users/bale/.gradle/caches/transforms-3/3e8b92964ac1dcc83aa22dafec736459/transformed/jetified-camera-camera2-1.2.0-alpha04/AndroidManifest.xml:31:17-103
+67                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+67-->[androidx.camera:camera-camera2:1.2.0-alpha04] /Users/bale/.gradle/caches/transforms-3/3e8b92964ac1dcc83aa22dafec736459/transformed/jetified-camera-camera2-1.2.0-alpha04/AndroidManifest.xml:32:17-86
+68        </service>
+69
+70        <provider
+70-->[androidx.emoji2:emoji2:1.0.0] /Users/bale/.gradle/caches/transforms-3/55166facbbf2a1313baa8ab94e05819f/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+71            android:name="androidx.startup.InitializationProvider"
+71-->[androidx.emoji2:emoji2:1.0.0] /Users/bale/.gradle/caches/transforms-3/55166facbbf2a1313baa8ab94e05819f/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+72            android:authorities="com.atharvakale.facerecognition.androidx-startup"
+72-->[androidx.emoji2:emoji2:1.0.0] /Users/bale/.gradle/caches/transforms-3/55166facbbf2a1313baa8ab94e05819f/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+73            android:exported="false" >
+73-->[androidx.emoji2:emoji2:1.0.0] /Users/bale/.gradle/caches/transforms-3/55166facbbf2a1313baa8ab94e05819f/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+74            <meta-data
+74-->[androidx.emoji2:emoji2:1.0.0] /Users/bale/.gradle/caches/transforms-3/55166facbbf2a1313baa8ab94e05819f/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+75                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+75-->[androidx.emoji2:emoji2:1.0.0] /Users/bale/.gradle/caches/transforms-3/55166facbbf2a1313baa8ab94e05819f/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+76                android:value="androidx.startup" />
+76-->[androidx.emoji2:emoji2:1.0.0] /Users/bale/.gradle/caches/transforms-3/55166facbbf2a1313baa8ab94e05819f/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+77            <meta-data
+77-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/bale/.gradle/caches/transforms-3/b17b9092229c57f60fdbffb1af622591/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+78                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+78-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/bale/.gradle/caches/transforms-3/b17b9092229c57f60fdbffb1af622591/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+79                android:value="androidx.startup" />
+79-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/bale/.gradle/caches/transforms-3/b17b9092229c57f60fdbffb1af622591/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+80        </provider>
+81        <provider
+81-->[com.google.mlkit:common:18.1.0] /Users/bale/.gradle/caches/transforms-3/a61f19ca5335b2ac7f077df455fa1e56/transformed/jetified-common-18.1.0/AndroidManifest.xml:9:9-13:38
+82            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+82-->[com.google.mlkit:common:18.1.0] /Users/bale/.gradle/caches/transforms-3/a61f19ca5335b2ac7f077df455fa1e56/transformed/jetified-common-18.1.0/AndroidManifest.xml:10:13-78
+83            android:authorities="com.atharvakale.facerecognition.mlkitinitprovider"
+83-->[com.google.mlkit:common:18.1.0] /Users/bale/.gradle/caches/transforms-3/a61f19ca5335b2ac7f077df455fa1e56/transformed/jetified-common-18.1.0/AndroidManifest.xml:11:13-69
+84            android:exported="false"
+84-->[com.google.mlkit:common:18.1.0] /Users/bale/.gradle/caches/transforms-3/a61f19ca5335b2ac7f077df455fa1e56/transformed/jetified-common-18.1.0/AndroidManifest.xml:12:13-37
+85            android:initOrder="99" />
+85-->[com.google.mlkit:common:18.1.0] /Users/bale/.gradle/caches/transforms-3/a61f19ca5335b2ac7f077df455fa1e56/transformed/jetified-common-18.1.0/AndroidManifest.xml:13:13-35
+86
+87        <activity
+87-->[com.google.android.gms:play-services-base:18.0.1] /Users/bale/.gradle/caches/transforms-3/7f75b09f886cfa54a0b89c45297c5276/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+88            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+88-->[com.google.android.gms:play-services-base:18.0.1] /Users/bale/.gradle/caches/transforms-3/7f75b09f886cfa54a0b89c45297c5276/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+89            android:exported="false"
+89-->[com.google.android.gms:play-services-base:18.0.1] /Users/bale/.gradle/caches/transforms-3/7f75b09f886cfa54a0b89c45297c5276/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+90            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+90-->[com.google.android.gms:play-services-base:18.0.1] /Users/bale/.gradle/caches/transforms-3/7f75b09f886cfa54a0b89c45297c5276/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+91
+92        <meta-data
+92-->[com.google.android.gms:play-services-basement:18.0.0] /Users/bale/.gradle/caches/transforms-3/2981d3657b44a7c8ddb6ef9f9a05182f/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+93            android:name="com.google.android.gms.version"
+93-->[com.google.android.gms:play-services-basement:18.0.0] /Users/bale/.gradle/caches/transforms-3/2981d3657b44a7c8ddb6ef9f9a05182f/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+94            android:value="@integer/google_play_services_version" />
+94-->[com.google.android.gms:play-services-basement:18.0.0] /Users/bale/.gradle/caches/transforms-3/2981d3657b44a7c8ddb6ef9f9a05182f/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+95
+96        <service
+96-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/bale/.gradle/caches/transforms-3/eac624d64e2d469c80e3886867fb5f84/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+97            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+97-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/bale/.gradle/caches/transforms-3/eac624d64e2d469c80e3886867fb5f84/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+98            android:exported="false" >
+98-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/bale/.gradle/caches/transforms-3/eac624d64e2d469c80e3886867fb5f84/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+99            <meta-data
+99-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/bale/.gradle/caches/transforms-3/eac624d64e2d469c80e3886867fb5f84/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+100                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+100-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/bale/.gradle/caches/transforms-3/eac624d64e2d469c80e3886867fb5f84/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+101                android:value="cct" />
+101-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/bale/.gradle/caches/transforms-3/eac624d64e2d469c80e3886867fb5f84/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+102        </service>
+103        <service
+103-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/bale/.gradle/caches/transforms-3/e01308c6f215229c6062e5d992e4168e/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+104            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+104-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/bale/.gradle/caches/transforms-3/e01308c6f215229c6062e5d992e4168e/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+105            android:exported="false"
+105-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/bale/.gradle/caches/transforms-3/e01308c6f215229c6062e5d992e4168e/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+106            android:permission="android.permission.BIND_JOB_SERVICE" >
+106-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/bale/.gradle/caches/transforms-3/e01308c6f215229c6062e5d992e4168e/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+107        </service>
+108
+109        <receiver
+109-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/bale/.gradle/caches/transforms-3/e01308c6f215229c6062e5d992e4168e/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+110            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+110-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/bale/.gradle/caches/transforms-3/e01308c6f215229c6062e5d992e4168e/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
+111            android:exported="false" />
+111-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/bale/.gradle/caches/transforms-3/e01308c6f215229c6062e5d992e4168e/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+112
+113        <uses-library
+113-->[androidx.window:window:1.0.0] /Users/bale/.gradle/caches/transforms-3/667a55a46d542d987d1cb5838a22b5f6/transformed/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
+114            android:name="androidx.window.extensions"
+114-->[androidx.window:window:1.0.0] /Users/bale/.gradle/caches/transforms-3/667a55a46d542d987d1cb5838a22b5f6/transformed/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
+115            android:required="false" />
+115-->[androidx.window:window:1.0.0] /Users/bale/.gradle/caches/transforms-3/667a55a46d542d987d1cb5838a22b5f6/transformed/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
+116        <uses-library
+116-->[androidx.window:window:1.0.0] /Users/bale/.gradle/caches/transforms-3/667a55a46d542d987d1cb5838a22b5f6/transformed/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
+117            android:name="androidx.window.sidecar"
+117-->[androidx.window:window:1.0.0] /Users/bale/.gradle/caches/transforms-3/667a55a46d542d987d1cb5838a22b5f6/transformed/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
+118            android:required="false" />
+118-->[androidx.window:window:1.0.0] /Users/bale/.gradle/caches/transforms-3/667a55a46d542d987d1cb5838a22b5f6/transformed/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
+119    </application>
+120
+121</manifest>

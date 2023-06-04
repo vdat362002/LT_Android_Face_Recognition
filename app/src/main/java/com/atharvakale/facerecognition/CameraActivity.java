@@ -20,8 +20,13 @@ import org.opencv.android.OpenCVLoader;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 
+import java.io.IOException;
+
 public class CameraActivity extends Activity implements CameraBridgeViewBase.CvCameraViewListener2 {
     private  static final String TAG="MainActivity";
+
+    // define our class
+    private Face_Recognition face_recognition;
 
     private Mat mRgba;
     private Mat mGray;
@@ -63,6 +68,20 @@ public class CameraActivity extends Activity implements CameraBridgeViewBase.CvC
         mOpenCvCameraView = (CameraBridgeViewBase) findViewById(R.id.surface);
         mOpenCvCameraView.setVisibility(SurfaceView.VISIBLE);
         mOpenCvCameraView.setCvCameraViewListener(this);
+
+        // call our class face_Recognition
+        try {
+            // input size model is 96 if using EfficientNet, MobileNet | 64 if using model.tflite
+            int inputSize = 96;
+            face_recognition = new Face_Recognition(getAssets(),
+                    CameraActivity.this,
+                    "MobileNet.tflite",
+                    inputSize);
+        }
+        catch (IOException e){
+            e.printStackTrace();
+            Log.d("CameraActivity", "Model is not loaded");
+        }
     }
 
     @Override
@@ -111,6 +130,11 @@ public class CameraActivity extends Activity implements CameraBridgeViewBase.CvC
     public Mat onCameraFrame(CameraBridgeViewBase.CvCameraViewFrame inputFrame) {
         mRgba = inputFrame.rgba();
         mGray = inputFrame.gray();
+
+        // pass input as mRgba
+        mRgba = face_recognition.recognizeImage(mRgba);
+        // output is saved in m Rgba
+        // we will show returned mRgba to screen
 
         return mRgba;
     }

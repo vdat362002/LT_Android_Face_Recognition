@@ -24,6 +24,10 @@
         "source": "/Users/bale/.gradle/daemon/7.3.3/com.atharvakale.facerecognition.app-main-50:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
+        "merged": "com.atharvakale.facerecognition.app-merged_res-48:/raw_haarcascade_frontalface_alt.xml.flat",
+        "source": "com.atharvakale.facerecognition.app-main-50:/raw/haarcascade_frontalface_alt.xml"
+    },
+    {
         "merged": "com.atharvakale.facerecognition.app-merged_res-48:/layout_activity_main.xml.flat",
         "source": "com.atharvakale.facerecognition.app-main-50:/layout/activity_main.xml"
     },
@@ -36,16 +40,12 @@
         "source": "/Users/bale/.gradle/daemon/7.3.3/com.atharvakale.facerecognition.app-main-50:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/bale/.gradle/daemon/7.3.3/com.atharvakale.facerecognition.app-merged_res-48:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "/Users/bale/.gradle/daemon/7.3.3/com.atharvakale.facerecognition.app-main-50:/mipmap-xxhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/Users/bale/.gradle/daemon/7.3.3/com.atharvakale.facerecognition.app-merged_res-48:/layout_activity_uploadimge.xml.flat",
         "source": "/Users/bale/.gradle/daemon/7.3.3/com.atharvakale.facerecognition.app-main-50:/layout/activity_uploadimge.xml"
     },
     {
-        "merged": "com.atharvakale.facerecognition.app-merged_res-48:/layout_activity_camera.xml.flat",
-        "source": "com.atharvakale.facerecognition.app-main-50:/layout/activity_camera.xml"
+        "merged": "/Users/bale/.gradle/daemon/7.3.3/com.atharvakale.facerecognition.app-merged_res-48:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/bale/.gradle/daemon/7.3.3/com.atharvakale.facerecognition.app-main-50:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/bale/.gradle/daemon/7.3.3/com.atharvakale.facerecognition.app-merged_res-48:/mipmap-mdpi_ic_launcher.png.flat",
@@ -70,6 +70,10 @@
     {
         "merged": "/Users/bale/.gradle/daemon/7.3.3/com.atharvakale.facerecognition.app-merged_res-48:/raw_facialrecognition1.json.flat",
         "source": "/Users/bale/.gradle/daemon/7.3.3/com.atharvakale.facerecognition.app-main-50:/raw/facialrecognition1.json"
+    },
+    {
+        "merged": "/Users/bale/.gradle/daemon/7.3.3/com.atharvakale.facerecognition.app-merged_res-48:/layout_activity_camera.xml.flat",
+        "source": "/Users/bale/.gradle/daemon/7.3.3/com.atharvakale.facerecognition.app-main-50:/layout/activity_camera.xml"
     },
     {
         "merged": "/Users/bale/.gradle/daemon/7.3.3/com.atharvakale.facerecognition.app-merged_res-48:/mipmap-mdpi_ic_launcher_round.png.flat",

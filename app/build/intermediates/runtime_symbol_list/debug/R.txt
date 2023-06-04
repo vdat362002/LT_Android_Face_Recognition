@@ -3353,6 +3353,7 @@ int mipmap ic_launcher_round 0x7f0d0001
 int navigation nav_graph 0x7f0e0000
 int plurals mtrl_badge_content_description 0x7f0f0000
 int raw facialrecognition1 0x7f100000
+int raw haarcascade_frontalface_alt 0x7f100001
 int string abc_action_bar_home_description 0x7f110000
 int string abc_action_bar_up_description 0x7f110001
 int string abc_action_menu_overflow_description 0x7f110002
