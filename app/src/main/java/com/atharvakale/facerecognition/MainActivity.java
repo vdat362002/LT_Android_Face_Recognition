@@ -96,6 +96,10 @@ public class MainActivity extends AppCompatActivity {
             Log.d("MainActivity", "Can't load OpenCV !!!");
         }
     }
+
+    private Button camera_button;
+    ////////
+
     FaceDetector detector;
 
     private ListenableFuture<ProcessCameraProvider> cameraProviderFuture;
@@ -267,6 +271,19 @@ public class MainActivity extends AppCompatActivity {
         detector = FaceDetection.getClient(highAccuracyOpts);
 
         cameraBind();
+
+        ////////////////////////////////////////////////////////// Lê Xuân Bách ////////////////////////////////////////////////////////
+        camera_button = findViewById(R.id.face_recognition_btn);
+        camera_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, CameraActivity.class)
+                        .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                // FLAG_ACTIVITY_CLEAR_TASK: clear all activity from the task stack and launches the target activity
+                // FLAG_ACTIVITY_CLEAR_TOP: if target activity is already exists in the task stack,
+                // all activity on top of it are cleared and the target activity brought to the top
+            }
+        });
     }
 
     public void openGal(View view) {
@@ -942,4 +959,6 @@ public class MainActivity extends AppCompatActivity {
         parcelFileDescriptor.close();
         return image;
     }
+
+
 }

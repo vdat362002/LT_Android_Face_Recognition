@@ -2830,6 +2830,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id face_recognition_btn
 id fade
 id fill
 id fillCenter
@@ -3081,6 +3082,7 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
+id surface
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3252,6 +3254,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_camera
 layout activity_main
 layout activity_splash_screen
 layout activity_uploadimge

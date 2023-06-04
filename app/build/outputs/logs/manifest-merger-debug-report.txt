@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:2:1-30:12
+ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:2:1-34:12
 MERGED from [androidx.navigation:navigation-ui:2.5.1] /Users/bale/.gradle/caches/transforms-3/172d699a3cea385b2d3041d306f4ec45/transformed/navigation-ui-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.6.1] /Users/bale/.gradle/caches/transforms-3/b6f52d92dea29c0a7f49d4078033a89a/transformed/material-1.6.1/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/bale/.gradle/caches/transforms-3/7973dc37a0b9b77da65b027e645a80f7/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
@@ -83,25 +83,33 @@ MERGED from [org.tensorflow:tensorflow-lite-support-api:0.3.0] /Users/bale/.grad
 MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/bale/.gradle/caches/transforms-3/77d503c18ae635d8eb4308f0076f0ef3/transformed/jetified-image-1.0.0-beta1/AndroidManifest.xml:2:1-9:12
 MERGED from [org.tensorflow:tensorflow-lite-task-base:0.3.0] /Users/bale/.gradle/caches/transforms-3/560119968bb87bb94317b79dbe3da1fa/transformed/jetified-tensorflow-lite-task-base-0.3.0/AndroidManifest.xml:2:1-6:12
 MERGED from [org.tensorflow:tensorflow-lite-api:2.7.0] /Users/bale/.gradle/caches/transforms-3/040d432fafdac8df363f7e8e25b8034a/transformed/jetified-tensorflow-lite-api-2.7.0/AndroidManifest.xml:2:1-12:12
-INJECTED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:2:1-34:12
 	package
 		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:3:5-46
 		INJECTED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml
-		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:2:1-30:12
+		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:2:1-34:12
 		INJECTED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml
-		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:2:1-30:12
+		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:2:1-34:12
 		INJECTED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.CAMERA
+ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:5:5-65
+	android:name
+		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:5:22-62
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:6:5-80
+	android:name
+		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:6:22-77
 application
-ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:5:5-26:19
+ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:8:5-32:19
 MERGED from [com.google.android.material:material:1.6.1] /Users/bale/.gradle/caches/transforms-3/b6f52d92dea29c0a7f49d4078033a89a/transformed/material-1.6.1/AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.6.1] /Users/bale/.gradle/caches/transforms-3/b6f52d92dea29c0a7f49d4078033a89a/transformed/material-1.6.1/AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/bale/.gradle/caches/transforms-3/7973dc37a0b9b77da65b027e645a80f7/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -151,55 +159,53 @@ MERGED from [org.tensorflow:tensorflow-lite-api:2.7.0] /Users/bale/.gradle/cache
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.8.0] /Users/bale/.gradle/caches/transforms-3/0638d9dacb5fd10604e28ec2b4d3c80b/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:11:9-35
+		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:8:9-41
+		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:11:9-41
 	android:roundIcon
-		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:10:9-49
+		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:13:9-49
 	android:largeHeap
-		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:9:9-33
+		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:12:9-33
 	android:icon
-		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:7:9-44
+		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:10:9-44
 	android:allowBackup
-		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:12:9-65
-activity#com.atharvakale.facerecognition.MainActivity
-ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:13:9-59
-	android:name
-		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:13:19-47
-activity#com.atharvakale.facerecognition.uploadimage
-ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:14:9-58
-	android:name
-		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:14:19-46
-activity#com.atharvakale.facerecognition.splash_screen
-ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:15:9-25:20
-	android:label
-		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:17:13-45
+		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:15:9-65
+activity#com.atharvakale.facerecognition.CameraActivity
+ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:16:9-18:40
 	android:exported
-		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:19:13-36
+		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:18:13-37
+	android:name
+		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:17:13-43
+activity#com.atharvakale.facerecognition.MainActivity
+ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:19:9-50
+	android:name
+		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:19:19-47
+activity#com.atharvakale.facerecognition.uploadimage
+ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:20:9-49
+	android:name
+		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:20:19-46
+activity#com.atharvakale.facerecognition.splash_screen
+ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:21:9-31:20
+	android:label
+		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:24:13-45
+	android:exported
+		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:23:13-36
 	android:theme
-		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:18:13-69
+		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:25:13-69
 	android:name
-		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:16:13-42
+		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:22:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:20:13-24:29
+ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:26:13-30:29
 action#android.intent.action.MAIN
-ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:21:17-69
+ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:27:17-69
 	android:name
-		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:21:25-66
+		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:27:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:23:17-77
+ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:29:17-77
 	android:name
-		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:23:27-74
-uses-permission#android.permission.CAMERA
-ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:28:5-65
-	android:name
-		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:28:22-62
-uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:29:5-80
-	android:name
-		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:29:22-77
+		ADDED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:29:27-74
 uses-sdk
 INJECTED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml
@@ -525,6 +531,6 @@ ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/bale/.gradle/cach
 	android:name
 		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/bale/.gradle/caches/transforms-3/b17b9092229c57f60fdbffb1af622591/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-IMPLIED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:2:1-30:12 reason: src.java.org.tensorflow.lite.task.core has a targetSdkVersion < 4
+IMPLIED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:2:1-34:12 reason: src.java.org.tensorflow.lite.task.core has a targetSdkVersion < 4
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:2:1-30:12 reason: src.java.org.tensorflow.lite.task.core has a targetSdkVersion < 4
+IMPLIED from /Users/bale/AndroidStudioProjects/LT_Android_Face_Recognition/app/src/main/AndroidManifest.xml:2:1-34:12 reason: src.java.org.tensorflow.lite.task.core has a targetSdkVersion < 4

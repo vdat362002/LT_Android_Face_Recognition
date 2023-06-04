@@ -10,6 +10,7 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
     <!-- <uses-sdk android:minSdkVersion="14"/> -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -28,6 +29,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.FaceRecognition.NoActionBar" >
+        <activity
+            android:name="com.atharvakale.facerecognition.CameraActivity"
+            android:exported="false" />
         <activity android:name="com.atharvakale.facerecognition.MainActivity" />
         <activity android:name="com.atharvakale.facerecognition.uploadimage" />
         <activity

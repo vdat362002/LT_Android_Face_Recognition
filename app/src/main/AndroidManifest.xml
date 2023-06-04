@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.atharvakale.facerecognition">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/face_icon2"
@@ -10,13 +13,16 @@
         android:roundIcon="@drawable/face_icon2"
         android:supportsRtl="true"
         android:theme="@style/Theme.FaceRecognition.NoActionBar">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".uploadimage"></activity>
+        <activity
+            android:name=".CameraActivity"
+            android:exported="false" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".uploadimage" />
         <activity
             android:name=".splash_screen"
+            android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.FaceRecognition.NoActionBar"
-            android:exported="true">
+            android:theme="@style/Theme.FaceRecognition.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,6 +31,4 @@
         </activity>
     </application>
 
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 </manifest>
